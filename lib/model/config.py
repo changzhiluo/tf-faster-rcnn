@@ -4,6 +4,7 @@ from __future__ import print_function
 
 import os
 import os.path as osp
+# print("Current path is: ", os.getcwd()) #/disk/luochangzhi/code/tf-faster-rcnn
 import numpy as np
 # `pip install easydict` if you don't have it
 from easydict import EasyDict as edict
@@ -60,6 +61,7 @@ __C.TRAIN.SUMMARY_INTERVAL = 180
 
 # Scale to use during training (can list multiple scales)
 # The scale is the pixel size of an image's shortest side
+# __C.TRAIN.SCALES = (600,)
 __C.TRAIN.SCALES = (600,)
 
 # Max pixel size of the longest side of a scaled input image
@@ -124,6 +126,7 @@ __C.TRAIN.PROPOSAL_METHOD = 'gt'
 __C.TRAIN.HAS_RPN = True
 
 # IOU >= thresh: positive example
+# __C.TRAIN.RPN_POSITIVE_OVERLAP = 0.7
 __C.TRAIN.RPN_POSITIVE_OVERLAP = 0.7
 
 # IOU < thresh: negative example
@@ -166,6 +169,7 @@ __C.TEST = edict()
 
 # Scale to use during testing (can NOT list multiple scales)
 # The scale is the pixel size of an image's shortest side
+#__C.TEST.SCALES = (600,)
 __C.TEST.SCALES = (600,)
 
 # Max pixel size of the longest side of a scaled input image
@@ -195,6 +199,7 @@ __C.TEST.RPN_NMS_THRESH = 0.7
 __C.TEST.RPN_PRE_NMS_TOP_N = 6000
 
 # Number of top scoring boxes to keep after applying NMS to RPN proposals
+# __C.TEST.RPN_POST_NMS_TOP_N = 300
 __C.TEST.RPN_POST_NMS_TOP_N = 300
 
 # Proposal height and width both need to be greater than RPN_MIN_SIZE (at orig image scale)
@@ -280,8 +285,8 @@ __C.POOLING_MODE = 'crop'
 # Size of the pooled region after RoI pooling
 __C.POOLING_SIZE = 7
 
-# Anchor scales for RPN
-__C.ANCHOR_SCALES = [8,16,32]
+# Anchor scales for RPN, base is 16 pixel
+__C.ANCHOR_SCALES = [4,8,16,32]
 
 # Anchor ratios for RPN
 __C.ANCHOR_RATIOS = [0.5,1,2]

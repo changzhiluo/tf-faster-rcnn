@@ -30,15 +30,16 @@ import argparse
 from nets.vgg16 import vgg16
 from nets.resnet_v1 import resnetv1
 
-CLASSES = ('__background__',
-           'aeroplane', 'bicycle', 'bird', 'boat',
-           'bottle', 'bus', 'car', 'cat', 'chair',
-           'cow', 'diningtable', 'dog', 'horse',
-           'motorbike', 'person', 'pottedplant',
-           'sheep', 'sofa', 'train', 'tvmonitor')
+class_num = 200
+class_name_file = './data/bird/CUB_200_2011/class_names.txt'
+class_name = ['__background__'] # 背景类，需要留着
+for line in open(class_name_file, 'r'):
+    class_name.append(line[0:-2])
+CLASSES = tuple(class_name)
+#print(CLASSES)
 
-NETS = {'vgg16': ('vgg16_faster_rcnn_iter_70000.ckpt',),'res101': ('res101_faster_rcnn_iter_110000.ckpt',)}
-DATASETS= {'pascal_voc': ('voc_2007_trainval',),'pascal_voc_0712': ('voc_2007_trainval+voc_2012_trainval',)}
+NETS = {'res101': 'res101_faster_rcnn_iter_100000.ckpt'}
+DATASETS= {'coco': 'coco_2014_train'}
 
 def vis_detections(im, class_name, dets, thresh=0.5):
     """Draw detected bounding boxes."""
@@ -102,10 +103,10 @@ def demo(sess, net, image_name):
 def parse_args():
     """Parse input arguments."""
     parser = argparse.ArgumentParser(description='Tensorflow Faster R-CNN demo')
-    parser.add_argument('--net', dest='demo_net', help='Network to use [vgg16 res101]',
+    parser.add_argument('--net', dest='demo_net', help='Network to use res101',
                         choices=NETS.keys(), default='res101')
-    parser.add_argument('--dataset', dest='dataset', help='Trained dataset [pascal_voc pascal_voc_0712]',
-                        choices=DATASETS.keys(), default='pascal_voc_0712')
+    parser.add_argument('--dataset', dest='dataset', help='Trained dataset coco',
+                        choices=DATASETS.keys(), default='coco')
     args = parser.parse_args()
 
     return args
@@ -117,9 +118,9 @@ if __name__ == '__main__':
     # model path
     demonet = args.demo_net
     dataset = args.dataset
-    tfmodel = os.path.join('output', demonet, DATASETS[dataset][0], 'default',
-                              NETS[demonet][0])
-
+    tfmodel = os.path.join('output', demonet, DATASETS[dataset], 'default',
+                              NETS[demonet])
+    print('tfmodel is: ', tfmodel)
 
     if not os.path.isfile(tfmodel + '.meta'):
         raise IOError(('{:s} not found.\nDid you download the proper networks from '
@@ -138,8 +139,8 @@ if __name__ == '__main__':
         net = resnetv1(num_layers=101)
     else:
         raise NotImplementedError
-    net.create_architecture("TEST", 21,
-                          tag='default', anchor_scales=[8, 16, 32])
+    net.create_architecture("TEST", class_num+1,
+                          tag='default', anchor_scales=[4, 8, 16, 32])
     saver = tf.train.Saver()
     saver.restore(sess, tfmodel)
 

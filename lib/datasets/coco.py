@@ -86,19 +86,28 @@ class coco(imdb):
     """
     return self.image_path_from_index(self._image_index[i])
 
+  # def image_path_from_index(self, index):
+  #   """
+  #   Construct an image path from the image's "index" identifier.
+  #   """
+  #   # Example image path for index=119993:
+  #   #   images/train2014/COCO_train2014_000000119993.jpg
+  #   file_name = ('COCO_' + self._data_name + '_' +
+  #                str(index).zfill(12) + '.jpg')
+  #   image_path = osp.join(self._data_path, 'images',
+  #                         self._data_name, file_name)
+  #   assert osp.exists(image_path), \
+  #     'Path does not exist: {}'.format(image_path)
+  #   return image_path
+
   def image_path_from_index(self, index):
     """
     Construct an image path from the image's "index" identifier.
     """
     # Example image path for index=119993:
     #   images/train2014/COCO_train2014_000000119993.jpg
-    file_name = ('COCO_' + self._data_name + '_' +
-                 str(index).zfill(12) + '.jpg')
-    image_path = osp.join(self._data_path, 'images',
-                          self._data_name, file_name)
-    assert osp.exists(image_path), \
-      'Path does not exist: {}'.format(image_path)
-    return image_path
+    file_name = self._COCO.imgs[index]['file_name'] # 该file_name来自json文件，对应的是图片路径
+    return file_name
 
   def gt_roidb(self):
     """
@@ -139,7 +148,10 @@ class coco(imdb):
       y1 = np.max((0, obj['bbox'][1]))
       x2 = np.min((width - 1, x1 + np.max((0, obj['bbox'][2] - 1))))
       y2 = np.min((height - 1, y1 + np.max((0, obj['bbox'][3] - 1))))
-      if obj['area'] > 0 and x2 >= x1 and y2 >= y1:
+      #if obj['area'] > 0 and x2 >= x1 and y2 >= y1:
+      #  obj['clean_bbox'] = [x1, y1, x2, y2]
+      #  valid_objs.append(obj)
+      if x2 >= x1 and y2 >= y1:
         obj['clean_bbox'] = [x1, y1, x2, y2]
         valid_objs.append(obj)
     objs = valid_objs
@@ -148,35 +160,48 @@ class coco(imdb):
     boxes = np.zeros((num_objs, 4), dtype=np.uint16)
     gt_classes = np.zeros((num_objs), dtype=np.int32)
     overlaps = np.zeros((num_objs, self.num_classes), dtype=np.float32)
-    seg_areas = np.zeros((num_objs), dtype=np.float32)
+    #seg_areas = np.zeros((num_objs), dtype=np.float32)
 
     # Lookup table to map from COCO category ids to our internal class
     # indices
     coco_cat_id_to_class_ind = dict([(self._class_to_coco_cat_id[cls],
                                       self._class_to_ind[cls])
                                      for cls in self._classes[1:]])
-
+    # print("dict is: ", coco_cat_id_to_class_ind)
     for ix, obj in enumerate(objs):
-      cls = coco_cat_id_to_class_ind[obj['category_id']]
+      # cls = coco_cat_id_to_class_ind[obj['category_id']]
+      ##########################################################################
+      try:
+        cls = coco_cat_id_to_class_ind[obj['category_id']]
+      except:
+        print("key is: ", obj['category_id']) # 216, 这个值怎么出现的？只有200类
+      ###########################################################################
       boxes[ix, :] = obj['clean_bbox']
       gt_classes[ix] = cls
-      seg_areas[ix] = obj['area']
-      if obj['iscrowd']:
-        # Set overlap to -1 for all classes for crowd objects
-        # so they will be excluded during training
-        overlaps[ix, :] = -1.0
-      else:
-        overlaps[ix, cls] = 1.0
+      # seg_areas[ix] = obj['area']
+      # if obj['iscrowd']:
+      #   # Set overlap to -1 for all classes for crowd objects
+      #   # so they will be excluded during training
+      #   overlaps[ix, :] = -1.0
+      # else:
+      #   overlaps[ix, cls] = 1.0
+      overlaps[ix, cls] = 1.0
 
     ds_utils.validate_boxes(boxes, width=width, height=height)
     overlaps = scipy.sparse.csr_matrix(overlaps)
+    # return {'width': width,
+    #         'height': height,
+    #         'boxes': boxes,
+    #         'gt_classes': gt_classes,
+    #         'gt_overlaps': overlaps,
+    #         'flipped': False,
+    #         'seg_areas': seg_areas}
     return {'width': width,
             'height': height,
             'boxes': boxes,
             'gt_classes': gt_classes,
             'gt_overlaps': overlaps,
-            'flipped': False,
-            'seg_areas': seg_areas}
+            'flipped': False}
 
   def _get_widths(self):
     return [r['width'] for r in self.roidb]
@@ -196,8 +221,8 @@ class coco(imdb):
                'boxes': boxes,
                'gt_classes': self.roidb[i]['gt_classes'],
                'gt_overlaps': self.roidb[i]['gt_overlaps'],
-               'flipped': True,
-               'seg_areas': self.roidb[i]['seg_areas']}
+               'flipped': True}
+               #'seg_areas': self.roidb[i]['seg_areas']}
 
       self.roidb.append(entry)
     self._image_index = self._image_index * 2
