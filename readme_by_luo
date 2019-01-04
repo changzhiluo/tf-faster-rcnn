@@ -1,3 +1,5 @@
+This project shows how to run tf-faster-rcnn using your own data. In general, you should run the following four steps.
+
 1. Annotate images using LabelMe(https://github.com/CSAILVision/LabelMeAnnotationTool), and get an annotation file for each image (See tf-faster-rcnn/data/my_data/xuebi). The name of each annotation file is exactly the same as the image, except for the extension (*.jpg -> *.json).
 
 2. Run convert_labelme_fortmat_to_my_format.py in tf-faster-rcnn/data/my_data to get the merged json file (new_data.json).
