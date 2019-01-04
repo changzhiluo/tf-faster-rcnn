@@ -1,0 +1,38 @@
+{
+  "imagePath": "16.jpg", 
+  "imageData": null, 
+  "shapes": [
+    {
+      "shape_type": "rectangle", 
+      "line_color": null, 
+      "points": [
+        [
+          20, 
+          265
+        ], 
+        [
+          177, 
+          462
+        ]
+      ], 
+      "fill_color": null, 
+      "label": "1"
+    }
+  ], 
+  "version": "3.6.10", 
+  "flags": {}, 
+  "fillColor": [
+    255, 
+    0, 
+    0, 
+    128
+  ], 
+  "lineColor": [
+    0, 
+    255, 
+    0, 
+    128
+  ], 
+  "imageWidth": 640, 
+  "imageHeight": 480
+}

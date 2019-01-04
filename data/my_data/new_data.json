@@ -1,0 +1,1235 @@
+{
+  "categories": [
+    {
+      "supercategory": "drink",
+      "name": "xuebi",
+      "id": 1
+    }
+  ],
+  "annotations": [
+    {
+      "bbox": [
+        199,
+        133,
+        291,
+        273
+      ],
+      "category_id": 1,
+      "id": 0,
+      "image_id": 0
+    },
+    {
+      "bbox": [
+        15,
+        217,
+        148,
+        383
+      ],
+      "category_id": 1,
+      "id": 1,
+      "image_id": 1
+    },
+    {
+      "bbox": [
+        145,
+        176,
+        297,
+        256
+      ],
+      "category_id": 1,
+      "id": 2,
+      "image_id": 2
+    },
+    {
+      "bbox": [
+        155,
+        219,
+        278,
+        405
+      ],
+      "category_id": 1,
+      "id": 3,
+      "image_id": 3
+    },
+    {
+      "bbox": [
+        175,
+        127,
+        267,
+        279
+      ],
+      "category_id": 1,
+      "id": 4,
+      "image_id": 4
+    },
+    {
+      "bbox": [
+        341,
+        156,
+        444,
+        309
+      ],
+      "category_id": 1,
+      "id": 5,
+      "image_id": 5
+    },
+    {
+      "bbox": [
+        149,
+        114,
+        251,
+        256
+      ],
+      "category_id": 1,
+      "id": 6,
+      "image_id": 6
+    },
+    {
+      "bbox": [
+        222,
+        173,
+        326,
+        341
+      ],
+      "category_id": 1,
+      "id": 7,
+      "image_id": 7
+    },
+    {
+      "bbox": [
+        145,
+        166,
+        248,
+        316
+      ],
+      "category_id": 1,
+      "id": 8,
+      "image_id": 8
+    },
+    {
+      "bbox": [
+        475,
+        216,
+        595,
+        415
+      ],
+      "category_id": 1,
+      "id": 9,
+      "image_id": 9
+    },
+    {
+      "bbox": [
+        379,
+        261,
+        505,
+        457
+      ],
+      "category_id": 1,
+      "id": 10,
+      "image_id": 10
+    },
+    {
+      "bbox": [
+        422,
+        263,
+        550,
+        480
+      ],
+      "category_id": 1,
+      "id": 11,
+      "image_id": 11
+    },
+    {
+      "bbox": [
+        325,
+        280,
+        526,
+        391
+      ],
+      "category_id": 1,
+      "id": 12,
+      "image_id": 12
+    },
+    {
+      "bbox": [
+        421,
+        97,
+        491,
+        227
+      ],
+      "category_id": 1,
+      "id": 13,
+      "image_id": 13
+    },
+    {
+      "bbox": [
+        469,
+        191,
+        582,
+        369
+      ],
+      "category_id": 1,
+      "id": 14,
+      "image_id": 14
+    },
+    {
+      "bbox": [
+        58,
+        179,
+        174,
+        333
+      ],
+      "category_id": 1,
+      "id": 15,
+      "image_id": 15
+    },
+    {
+      "bbox": [
+        390,
+        159,
+        475,
+        317
+      ],
+      "category_id": 1,
+      "id": 16,
+      "image_id": 16
+    },
+    {
+      "bbox": [
+        65,
+        211,
+        199,
+        384
+      ],
+      "category_id": 1,
+      "id": 17,
+      "image_id": 17
+    },
+    {
+      "bbox": [
+        262,
+        139,
+        365,
+        291
+      ],
+      "category_id": 1,
+      "id": 18,
+      "image_id": 18
+    },
+    {
+      "bbox": [
+        280,
+        128,
+        366,
+        268
+      ],
+      "category_id": 1,
+      "id": 19,
+      "image_id": 19
+    },
+    {
+      "bbox": [
+        375,
+        106,
+        458,
+        236
+      ],
+      "category_id": 1,
+      "id": 20,
+      "image_id": 20
+    },
+    {
+      "bbox": [
+        425,
+        189,
+        552,
+        377
+      ],
+      "category_id": 1,
+      "id": 21,
+      "image_id": 21
+    },
+    {
+      "bbox": [
+        516,
+        118,
+        605,
+        263
+      ],
+      "category_id": 1,
+      "id": 22,
+      "image_id": 22
+    },
+    {
+      "bbox": [
+        438,
+        93,
+        521,
+        231
+      ],
+      "category_id": 1,
+      "id": 23,
+      "image_id": 23
+    },
+    {
+      "bbox": [
+        270,
+        208,
+        425,
+        290
+      ],
+      "category_id": 1,
+      "id": 24,
+      "image_id": 24
+    },
+    {
+      "bbox": [
+        208,
+        243,
+        334,
+        432
+      ],
+      "category_id": 1,
+      "id": 25,
+      "image_id": 25
+    },
+    {
+      "bbox": [
+        156,
+        125,
+        252,
+        258
+      ],
+      "category_id": 1,
+      "id": 26,
+      "image_id": 26
+    },
+    {
+      "bbox": [
+        526,
+        141,
+        618,
+        300
+      ],
+      "category_id": 1,
+      "id": 27,
+      "image_id": 27
+    },
+    {
+      "bbox": [
+        171,
+        155,
+        298,
+        259
+      ],
+      "category_id": 1,
+      "id": 28,
+      "image_id": 28
+    },
+    {
+      "bbox": [
+        271,
+        166,
+        402,
+        248
+      ],
+      "category_id": 1,
+      "id": 29,
+      "image_id": 29
+    },
+    {
+      "bbox": [
+        71,
+        184,
+        195,
+        341
+      ],
+      "category_id": 1,
+      "id": 30,
+      "image_id": 30
+    },
+    {
+      "bbox": [
+        468,
+        99,
+        549,
+        240
+      ],
+      "category_id": 1,
+      "id": 31,
+      "image_id": 31
+    },
+    {
+      "bbox": [
+        408,
+        250,
+        599,
+        347
+      ],
+      "category_id": 1,
+      "id": 32,
+      "image_id": 32
+    },
+    {
+      "bbox": [
+        368,
+        170,
+        476,
+        292
+      ],
+      "category_id": 1,
+      "id": 33,
+      "image_id": 33
+    },
+    {
+      "bbox": [
+        542,
+        256,
+        634,
+        448
+      ],
+      "category_id": 1,
+      "id": 34,
+      "image_id": 34
+    },
+    {
+      "bbox": [
+        385,
+        191,
+        525,
+        278
+      ],
+      "category_id": 1,
+      "id": 35,
+      "image_id": 35
+    },
+    {
+      "bbox": [
+        20,
+        265,
+        177,
+        462
+      ],
+      "category_id": 1,
+      "id": 36,
+      "image_id": 36
+    },
+    {
+      "bbox": [
+        123,
+        199,
+        237,
+        357
+      ],
+      "category_id": 1,
+      "id": 37,
+      "image_id": 37
+    },
+    {
+      "bbox": [
+        343,
+        151,
+        480,
+        228
+      ],
+      "category_id": 1,
+      "id": 38,
+      "image_id": 38
+    },
+    {
+      "bbox": [
+        423,
+        193,
+        536,
+        372
+      ],
+      "category_id": 1,
+      "id": 39,
+      "image_id": 39
+    },
+    {
+      "bbox": [
+        8,
+        230,
+        130,
+        411
+      ],
+      "category_id": 1,
+      "id": 40,
+      "image_id": 40
+    },
+    {
+      "bbox": [
+        421,
+        125,
+        508,
+        267
+      ],
+      "category_id": 1,
+      "id": 41,
+      "image_id": 41
+    },
+    {
+      "bbox": [
+        174,
+        192,
+        325,
+        285
+      ],
+      "category_id": 1,
+      "id": 42,
+      "image_id": 42
+    },
+    {
+      "bbox": [
+        268,
+        161,
+        370,
+        316
+      ],
+      "category_id": 1,
+      "id": 43,
+      "image_id": 43
+    },
+    {
+      "bbox": [
+        113,
+        211,
+        237,
+        385
+      ],
+      "category_id": 1,
+      "id": 44,
+      "image_id": 44
+    },
+    {
+      "bbox": [
+        390,
+        162,
+        485,
+        320
+      ],
+      "category_id": 1,
+      "id": 45,
+      "image_id": 45
+    },
+    {
+      "bbox": [
+        462,
+        166,
+        568,
+        338
+      ],
+      "category_id": 1,
+      "id": 46,
+      "image_id": 46
+    },
+    {
+      "bbox": [
+        345,
+        126,
+        439,
+        267
+      ],
+      "category_id": 1,
+      "id": 47,
+      "image_id": 47
+    },
+    {
+      "bbox": [
+        134,
+        179,
+        254,
+        328
+      ],
+      "category_id": 1,
+      "id": 48,
+      "image_id": 48
+    },
+    {
+      "bbox": [
+        202,
+        136,
+        299,
+        268
+      ],
+      "category_id": 1,
+      "id": 49,
+      "image_id": 49
+    },
+    {
+      "bbox": [
+        219,
+        166,
+        342,
+        276
+      ],
+      "category_id": 1,
+      "id": 50,
+      "image_id": 50
+    },
+    {
+      "bbox": [
+        299,
+        202,
+        398,
+        362
+      ],
+      "category_id": 1,
+      "id": 51,
+      "image_id": 51
+    },
+    {
+      "bbox": [
+        328,
+        118,
+        403,
+        248
+      ],
+      "category_id": 1,
+      "id": 52,
+      "image_id": 52
+    },
+    {
+      "bbox": [
+        365,
+        239,
+        546,
+        331
+      ],
+      "category_id": 1,
+      "id": 53,
+      "image_id": 53
+    },
+    {
+      "bbox": [
+        153,
+        168,
+        271,
+        281
+      ],
+      "category_id": 1,
+      "id": 54,
+      "image_id": 54
+    },
+    {
+      "bbox": [
+        268,
+        128,
+        359,
+        268
+      ],
+      "category_id": 1,
+      "id": 55,
+      "image_id": 55
+    },
+    {
+      "bbox": [
+        143,
+        92,
+        227,
+        212
+      ],
+      "category_id": 1,
+      "id": 56,
+      "image_id": 56
+    },
+    {
+      "bbox": [
+        96,
+        176,
+        210,
+        332
+      ],
+      "category_id": 1,
+      "id": 57,
+      "image_id": 57
+    },
+    {
+      "bbox": [
+        439,
+        239,
+        555,
+        448
+      ],
+      "category_id": 1,
+      "id": 58,
+      "image_id": 58
+    },
+    {
+      "bbox": [
+        245,
+        295,
+        376,
+        480
+      ],
+      "category_id": 1,
+      "id": 59,
+      "image_id": 59
+    },
+    {
+      "bbox": [
+        194,
+        162,
+        293,
+        306
+      ],
+      "category_id": 1,
+      "id": 60,
+      "image_id": 60
+    },
+    {
+      "bbox": [
+        248,
+        111,
+        329,
+        253
+      ],
+      "category_id": 1,
+      "id": 61,
+      "image_id": 61
+    },
+    {
+      "bbox": [
+        166,
+        176,
+        285,
+        335
+      ],
+      "category_id": 1,
+      "id": 62,
+      "image_id": 62
+    },
+    {
+      "bbox": [
+        277,
+        138,
+        364,
+        290
+      ],
+      "category_id": 1,
+      "id": 63,
+      "image_id": 63
+    },
+    {
+      "bbox": [
+        291,
+        228,
+        461,
+        319
+      ],
+      "category_id": 1,
+      "id": 64,
+      "image_id": 64
+    },
+    {
+      "bbox": [
+        200,
+        144,
+        295,
+        290
+      ],
+      "category_id": 1,
+      "id": 65,
+      "image_id": 65
+    },
+    {
+      "bbox": [
+        191,
+        229,
+        369,
+        337
+      ],
+      "category_id": 1,
+      "id": 66,
+      "image_id": 66
+    },
+    {
+      "bbox": [
+        351,
+        122,
+        434,
+        273
+      ],
+      "category_id": 1,
+      "id": 67,
+      "image_id": 67
+    },
+    {
+      "bbox": [
+        454,
+        122,
+        539,
+        274
+      ],
+      "category_id": 1,
+      "id": 68,
+      "image_id": 68
+    },
+    {
+      "bbox": [
+        430,
+        128,
+        504,
+        273
+      ],
+      "category_id": 1,
+      "id": 69,
+      "image_id": 69
+    },
+    {
+      "bbox": [
+        124,
+        196,
+        241,
+        359
+      ],
+      "category_id": 1,
+      "id": 70,
+      "image_id": 70
+    }
+  ],
+  "info": {
+    "date_created": "2018/11/28",
+    "version": "1.0",
+    "description": "CUB-200-2011 Dataset",
+    "year": "2008",
+    "contributor": "Changzhi Luo",
+    "url": "http://www.vision.caltech.edu/visipedia-data/CUB-200-2011/CUB_200_2011.tgz"
+  },
+  "licenses": [
+    {
+      "name": "woshishabi",
+      "url": "None",
+      "id": 1
+    }
+  ],
+  "images": [
+    {
+      "file_name": "./xuebi/43.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 0
+    },
+    {
+      "file_name": "./xuebi/26.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 1
+    },
+    {
+      "file_name": "./xuebi/65.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 2
+    },
+    {
+      "file_name": "./xuebi/10.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 3
+    },
+    {
+      "file_name": "./xuebi/3.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 4
+    },
+    {
+      "file_name": "./xuebi/45.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 5
+    },
+    {
+      "file_name": "./xuebi/13.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 6
+    },
+    {
+      "file_name": "./xuebi/15.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 7
+    },
+    {
+      "file_name": "./xuebi/40.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 8
+    },
+    {
+      "file_name": "./xuebi/31.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 9
+    },
+    {
+      "file_name": "./xuebi/52.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 10
+    },
+    {
+      "file_name": "./xuebi/7.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 11
+    },
+    {
+      "file_name": "./xuebi/63.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 12
+    },
+    {
+      "file_name": "./xuebi/18.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 13
+    },
+    {
+      "file_name": "./xuebi/11.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 14
+    },
+    {
+      "file_name": "./xuebi/25.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 15
+    },
+    {
+      "file_name": "./xuebi/22.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 16
+    },
+    {
+      "file_name": "./xuebi/51.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 17
+    },
+    {
+      "file_name": "./xuebi/47.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 18
+    },
+    {
+      "file_name": "./xuebi/30.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 19
+    },
+    {
+      "file_name": "./xuebi/72.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 20
+    },
+    {
+      "file_name": "./xuebi/9.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 21
+    },
+    {
+      "file_name": "./xuebi/12.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 22
+    },
+    {
+      "file_name": "./xuebi/6.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 23
+    },
+    {
+      "file_name": "./xuebi/57.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 24
+    },
+    {
+      "file_name": "./xuebi/53.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 25
+    },
+    {
+      "file_name": "./xuebi/56.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 26
+    },
+    {
+      "file_name": "./xuebi/5.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 27
+    },
+    {
+      "file_name": "./xuebi/70.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 28
+    },
+    {
+      "file_name": "./xuebi/64.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 29
+    },
+    {
+      "file_name": "./xuebi/50.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 30
+    },
+    {
+      "file_name": "./xuebi/33.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 31
+    },
+    {
+      "file_name": "./xuebi/68.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 32
+    },
+    {
+      "file_name": "./xuebi/61.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 33
+    },
+    {
+      "file_name": "./xuebi/35.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 34
+    },
+    {
+      "file_name": "./xuebi/59.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 35
+    },
+    {
+      "file_name": "./xuebi/16.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 36
+    },
+    {
+      "file_name": "./xuebi/1.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 37
+    },
+    {
+      "file_name": "./xuebi/66.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 38
+    },
+    {
+      "file_name": "./xuebi/46.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 39
+    },
+    {
+      "file_name": "./xuebi/39.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 40
+    },
+    {
+      "file_name": "./xuebi/48.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 41
+    },
+    {
+      "file_name": "./xuebi/69.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 42
+    },
+    {
+      "file_name": "./xuebi/8.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 43
+    },
+    {
+      "file_name": "./xuebi/27.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 44
+    },
+    {
+      "file_name": "./xuebi/54.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 45
+    },
+    {
+      "file_name": "./xuebi/37.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 46
+    },
+    {
+      "file_name": "./xuebi/41.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 47
+    },
+    {
+      "file_name": "./xuebi/38.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 48
+    },
+    {
+      "file_name": "./xuebi/49.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 49
+    },
+    {
+      "file_name": "./xuebi/60.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 50
+    },
+    {
+      "file_name": "./xuebi/23.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 51
+    },
+    {
+      "file_name": "./xuebi/55.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 52
+    },
+    {
+      "file_name": "./xuebi/58.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 53
+    },
+    {
+      "file_name": "./xuebi/62.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 54
+    },
+    {
+      "file_name": "./xuebi/42.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 55
+    },
+    {
+      "file_name": "./xuebi/21.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 56
+    },
+    {
+      "file_name": "./xuebi/14.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 57
+    },
+    {
+      "file_name": "./xuebi/34.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 58
+    },
+    {
+      "file_name": "./xuebi/17.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 59
+    },
+    {
+      "file_name": "./xuebi/28.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 60
+    },
+    {
+      "file_name": "./xuebi/19.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 61
+    },
+    {
+      "file_name": "./xuebi/44.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 62
+    },
+    {
+      "file_name": "./xuebi/20.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 63
+    },
+    {
+      "file_name": "./xuebi/71.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 64
+    },
+    {
+      "file_name": "./xuebi/29.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 65
+    },
+    {
+      "file_name": "./xuebi/67.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 66
+    },
+    {
+      "file_name": "./xuebi/24.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 67
+    },
+    {
+      "file_name": "./xuebi/32.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 68
+    },
+    {
+      "file_name": "./xuebi/4.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 69
+    },
+    {
+      "file_name": "./xuebi/2.jpg",
+      "height": 480,
+      "width": 640,
+      "id": 70
+    }
+  ]
+}

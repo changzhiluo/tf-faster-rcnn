@@ -1,0 +1,106 @@
+{
+  "categories": [
+    {
+      "name": "001.Black_footed_Albatross",
+      "id": 1,
+      "supercategory": "shabi"
+    },
+    {
+      "name": "002.Laysan_Albatross",
+      "id": 2,
+      "supercategory": "shabi"
+    },
+    {
+      "name": "003.Sooty_Albatross",
+      "id": 3,
+      "supercategory": "shabi"
+    }
+  ],
+  "images": [
+    {
+      "id": 2,
+      "width": 500,
+      "file_name": "/home/luochangzhi/code/tf-faster-rcnn/data/bird/CUB_200_2011/images/001.Black_footed_Albatross/Black_Footed_Albatross_0009_34.jpg",
+      "height": 336
+    },
+    {
+      "id": 4,
+      "width": 415,
+      "file_name": "/home/luochangzhi/code/tf-faster-rcnn/data/bird/CUB_200_2011/images/001.Black_footed_Albatross/Black_Footed_Albatross_0074_59.jpg",
+      "height": 500
+    },
+    {
+      "id": 5,
+      "width": 331,
+      "file_name": "/home/luochangzhi/code/tf-faster-rcnn/data/bird/CUB_200_2011/images/001.Black_footed_Albatross/Black_Footed_Albatross_0014_89.jpg",
+      "height": 380
+    },
+    {
+      "id": 7,
+      "width": 500,
+      "file_name": "/home/luochangzhi/code/tf-faster-rcnn/data/bird/CUB_200_2011/images/001.Black_footed_Albatross/Black_Footed_Albatross_0031_100.jpg",
+      "height": 340
+    }
+  ],
+  "annotations": [
+    {
+      "id": 2,
+      "bbox": [
+        139,
+        30,
+        153,
+        264
+      ],
+      "image_id": 2,
+      "category_id": 1
+    },
+    {
+      "id": 4,
+      "bbox": [
+        112,
+        90,
+        255,
+        242
+      ],
+      "image_id": 4,
+      "category_id": 1
+    },
+    {
+      "id": 5,
+      "bbox": [
+        70,
+        50,
+        134,
+        303
+      ],
+      "image_id": 5,
+      "category_id": 1
+    },
+    {
+      "id": 7,
+      "bbox": [
+        7,
+        75,
+        420,
+        262
+      ],
+      "image_id": 7,
+      "category_id": 1
+    }
+  ],
+  "licenses": [
+    {
+      "name": "woshishabi",
+      "id": 1,
+      "url": "None"
+    }
+  ],
+  "info": {
+    "contributor": "Changzhi Luo",
+    "version": "1.0",
+    "description": "CUB-200-2011 Dataset",
+    "url": "http://www.vision.caltech.edu/visipedia-data/CUB-200-2011/CUB_200_2011.tgz",
+    "date_created": "2018/11/28",
+    "year": "2008"
+  }
+}
